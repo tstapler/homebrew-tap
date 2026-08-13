@@ -1,25 +1,25 @@
 class Kibitzer < Formula
-  desc "Diff-aware code/doc inspection hook for Claude Code"
+  desc "Advisory, diff-aware code/doc quality checks for AI agents, CI, and local dev"
   homepage "https://github.com/tstapler/kibitzer"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.3/kibitzer-aarch64-apple-darwin.tar.xz"
-      sha256 "594b15ae3b6b7779b16930f3fd9f99d8b9c5ba8397ba48982786f45b7a0d8f62"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.4/kibitzer-aarch64-apple-darwin.tar.xz"
+      sha256 "8c6719218b36e38ad720755da1eaa5b7efd1a0d491fc30268ec38c12cd15c062"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.3/kibitzer-x86_64-apple-darwin.tar.xz"
-      sha256 "edf86b2cf41ef39888735ff76909eb5946b9360d012be23adea9d34b957a700f"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.4/kibitzer-x86_64-apple-darwin.tar.xz"
+      sha256 "62ba2b2a10828d57188585b8f1aa3bce69547e32942e7b4103a76e715a04b8e3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.3/kibitzer-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f6fc26d9d54384553e225bd51268066a24441873e084fd124dda5d11683f5600"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.4/kibitzer-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "288e2c711fcc491fbae84c7a40cff2c86dc424e519b823eb3b4e913da64245f0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.3/kibitzer-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ba10ecaeaf590386390713830ff276085cae5e079f35f9ea0932bdeee928313b"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.4/kibitzer-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f2dfe0e21f0584f872c5680c34c09827a26fb5e684a375aa08c9837f7a16347a"
     end
   end
   license "MIT"
