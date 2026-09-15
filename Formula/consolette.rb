@@ -1,25 +1,25 @@
 class Consolette < Formula
-  desc "consolette — CLI / MCP tool"
+  desc "Provider-agnostic LLM router: proxies Anthropic/Bedrock/OpenAI-compatible upstreams with fallback, weighted routing, and rate limiting"
   homepage "https://github.com/tstapler/consolette"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/consolette/releases/download/v0.1.1/consolette-aarch64-apple-darwin.tar.xz"
-      sha256 "6d158ef7438de0a45668ae3247b94d223371d27a96e0bfd9d2ba7048d44a600a"
+      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-aarch64-apple-darwin.tar.xz"
+      sha256 "c211520ef860cc23be516d9857de495fa66c25dd43d4aa37a4d818b18f1a650f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/consolette/releases/download/v0.1.1/consolette-x86_64-apple-darwin.tar.xz"
-      sha256 "563fa547d41346da2f948af601762e846931c131212cb594729bd2145f53c0f0"
+      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-x86_64-apple-darwin.tar.xz"
+      sha256 "a31b27d607e4013bab3325293e31a2d109f9648fb0eab096652e20fc4961d46e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/consolette/releases/download/v0.1.1/consolette-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a873f98a90357ba0a5b75ff8c12d0dad438100fb4c1b9bfb5590af32a4c5a659"
+      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a4456c9c6712c1cb28900ab1e6e83b2289f6dc4595525dde85fd26258ddf19ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/consolette/releases/download/v0.1.1/consolette-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3692df2c7248fa1a4917b892495a14949a4e724f985c2ddedcab5bbaa8ece7ed"
+      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0b05f6eb7bae86812bad94bf3445bf98cd513ef97719415a16c66e98779509ae"
     end
   end
   license "MIT"
@@ -48,16 +48,16 @@ class Consolette < Formula
 
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "cmdcrush", "consolette", "mcp-proxy"
+      bin.install "cmdcrush", "consolette", "mcp-proxy", "readme-check"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "cmdcrush", "consolette", "mcp-proxy"
+      bin.install "cmdcrush", "consolette", "mcp-proxy", "readme-check"
     end
     if OS.linux? && Hardware::CPU.arm?
-      bin.install "cmdcrush", "consolette", "mcp-proxy"
+      bin.install "cmdcrush", "consolette", "mcp-proxy", "readme-check"
     end
     if OS.linux? && Hardware::CPU.intel?
-      bin.install "cmdcrush", "consolette", "mcp-proxy"
+      bin.install "cmdcrush", "consolette", "mcp-proxy", "readme-check"
     end
 
     install_binary_aliases!
