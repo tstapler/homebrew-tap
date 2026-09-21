@@ -1,25 +1,25 @@
 class Consolette < Formula
   desc "Provider-agnostic LLM router: proxies Anthropic/Bedrock/OpenAI-compatible upstreams with fallback, weighted routing, and rate limiting"
   homepage "https://github.com/tstapler/consolette"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-aarch64-apple-darwin.tar.xz"
-      sha256 "c211520ef860cc23be516d9857de495fa66c25dd43d4aa37a4d818b18f1a650f"
+      url "https://github.com/tstapler/consolette/releases/download/v0.3.0/consolette-aarch64-apple-darwin.tar.xz"
+      sha256 "435c13a267cdbb38b35d9416a32d134b19aad711b17bf08a4269159648710eb4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-x86_64-apple-darwin.tar.xz"
-      sha256 "a31b27d607e4013bab3325293e31a2d109f9648fb0eab096652e20fc4961d46e"
+      url "https://github.com/tstapler/consolette/releases/download/v0.3.0/consolette-x86_64-apple-darwin.tar.xz"
+      sha256 "af4d84d6c6114287be716c30c0466f7d651808372d13f2727608f8b752211cd5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a4456c9c6712c1cb28900ab1e6e83b2289f6dc4595525dde85fd26258ddf19ea"
+      url "https://github.com/tstapler/consolette/releases/download/v0.3.0/consolette-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f672eccad26ceb3bee6bef86b7232da8fd6c15b07917e90a1b0330ea96003615"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/consolette/releases/download/v0.2.0/consolette-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0b05f6eb7bae86812bad94bf3445bf98cd513ef97719415a16c66e98779509ae"
+      url "https://github.com/tstapler/consolette/releases/download/v0.3.0/consolette-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5c4342c23cd2fabef1b81d70b1c4395f6e92a73b75af02deb9b295741b37dad4"
     end
   end
   license "MIT"
