@@ -1,25 +1,25 @@
 class Kibitzer < Formula
   desc "Advisory, diff-aware code/doc quality checks for AI agents, CI, and local dev"
   homepage "https://github.com/tstapler/kibitzer"
-  version "0.1.20"
+  version "0.1.21"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.20/kibitzer-aarch64-apple-darwin.tar.xz"
-      sha256 "bbe023dbe0ad4da38a50de227a5c8571042ed1719d87646b93339f21cfa30547"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.21/kibitzer-aarch64-apple-darwin.tar.xz"
+      sha256 "3323e47fc2c268cccafd1edd03758e75ab989eadbbcce9d6a44b64a2922cec1f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.20/kibitzer-x86_64-apple-darwin.tar.xz"
-      sha256 "338bad0c2b7a85cbb74153348d79a358729d749d2e6438fbc1ed8eab6a59e423"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.21/kibitzer-x86_64-apple-darwin.tar.xz"
+      sha256 "969fe9ee841879f1ae3e2d2f3dadeb4e736acec1966d8ae81d69908c1c90c074"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.20/kibitzer-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "919760010a42983c015fe5590fc50c7ab21102faf514f04e0fe297ce6dfeb1f2"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.21/kibitzer-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a2bed623fd0a2068b3faee6b754d2a0e4331d89a698c5c6563eaaa2975a8e03b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.20/kibitzer-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "354c8f7cc2f83068ec9869fffafe4c19939a25041108aeb4c9024f12fb94efca"
+      url "https://github.com/tstapler/kibitzer/releases/download/v0.1.21/kibitzer-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5d934a87d7ab1f3b46a0186246246c0760651836f06ba3bf945f4b6ccb9933ad"
     end
   end
   license "MIT"
