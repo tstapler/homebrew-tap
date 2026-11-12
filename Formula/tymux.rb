@@ -1,28 +1,28 @@
 class Tymux < Formula
   desc "Terminal multiplexer daemon (tymuxd) and CLI (tymux)"
   homepage "https://github.com/tstapler/tymux"
-  version "1.17.5"
+  version "1.17.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/tstapler/tymux/releases/download/v1.17.5/tymux-aarch64-apple-darwin.tar.gz"
-      sha256 "23be2f111e79da04ea9c255dfbe236a96f1426764d7d1ac4c365cb88297e452f"
+      url "https://github.com/tstapler/tymux/releases/download/v1.17.6/tymux-aarch64-apple-darwin.tar.gz"
+      sha256 "7c302a6af90ff540acbec4ecda50735eb0eb0386912d01f162417e3f46c715f1"
     end
     on_intel do
-      url "https://github.com/tstapler/tymux/releases/download/v1.17.5/tymux-x86_64-apple-darwin.tar.gz"
-      sha256 "6018176b9e79b671c33611078336d2b8c57e58d710e73d3f3e62fa9d5b861208"
+      url "https://github.com/tstapler/tymux/releases/download/v1.17.6/tymux-x86_64-apple-darwin.tar.gz"
+      sha256 "cd7f8c09287a4659c6b0648e471fe7b859b134ad2592c5b33360d1656acfd5cd"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tstapler/tymux/releases/download/v1.17.5/tymux-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "77a20de0f6f5d0a52493c852668193c7bf7e75471f2bab8543a987778b4b6d84"
+      url "https://github.com/tstapler/tymux/releases/download/v1.17.6/tymux-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "0a767680d41e575fb36fa3249628ca3d723f4affd8eec7bb981a68cdfee57ed0"
     end
     on_intel do
-      url "https://github.com/tstapler/tymux/releases/download/v1.17.5/tymux-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "71b9584eea4481bc49b1db33452fcf47a077e64d5c00d0eb2b415dd7c30068db"
+      url "https://github.com/tstapler/tymux/releases/download/v1.17.6/tymux-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7cf3fca6b311214cd89aea02d6db5ab841d7e3333328b9515fb2aca70d63832f"
     end
   end
 
