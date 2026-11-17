@@ -6,19 +6,19 @@ class Dunnage < Formula
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/tstapler/dunnage/releases/download/v0.3.0/dunnage-0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "8fa2669805eeba666c43013c902ecc99b22150c0cf79a0d9e52b157cc167f65f"
+      url "https://github.com/tstapler/dunnage/releases/download/v0.3.1/dunnage-0.3.1-aarch64-apple-darwin.tar.gz"
+      sha256 "940e31ebb08a234d25b89a242ebbf32c55aea5dd8f1df20b204f33596dda0c2f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tstapler/dunnage/releases/download/v0.3.0/dunnage-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3dc43ec3c661e3d7704a655499cde1a1cb7820f52cafeef6542d6d1ba18f9a50"
+      url "https://github.com/tstapler/dunnage/releases/download/v0.3.1/dunnage-0.3.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2ab80b26d04a1c4e7da7d9a72240cb4c37292e95a86be7c77fc2a5b4bc4d7e83"
     end
     on_intel do
-      url "https://github.com/tstapler/dunnage/releases/download/v0.3.0/dunnage-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "be8e851acbd0a89590116f7552b81478481e591de3ef0ef8bf1b591e65943c35"
+      url "https://github.com/tstapler/dunnage/releases/download/v0.3.1/dunnage-0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "469311834ed5464a35a1f55f5248725783bf3f92cdd8cd2f84320d4382653c31"
     end
   end
 
